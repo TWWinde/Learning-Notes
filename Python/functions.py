@@ -40,3 +40,11 @@ print(next_element)  # 输出 3
 next_element = next(my_iterator, "迭代器已结束")
 print(next_element)  # 输出 "迭代器已结束"
 
+########################################shutil.copyfile#######################################
+'''
+用于将一个文件的内容复制到另一个文件中。'''
+import shutil
+original_file_path = 'path/to/source/file.txt'
+new_file_path = 'path/to/destination/file.txt'
+# 复制源文件的内容到目标文件
+shutil.copyfile(original_file_path, new_file_path)
