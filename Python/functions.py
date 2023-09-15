@@ -50,7 +50,7 @@ new_file_path = 'path/to/destination/file.txt'
 shutil.copyfile(original_file_path, new_file_path)
 
 ########################################isinstance#######################################
-'''isinstance 是一个 Python 内置函数，用于检查一个对象是否属于指定的类或类型。'''
+'''isinstance 是一个 Python 内置函数，用于检查一个对象是否属于指定的类或类型。   '''
 result = isinstance(42, int)
 print(result)  # 输出: True
 
