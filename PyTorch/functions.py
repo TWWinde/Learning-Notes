@@ -39,18 +39,6 @@ output = torch.argmax(input, dim=None, keepdim=False)
 # 例如，如果有一个输入张量 input = torch.tensor([[3, 1, 4], [5, 2, 9]])，
 # 则 torch.argmax(input, dim=1) 将返回一个新的张量 [2, 2]，表示在每一行中找到的最大值的索引。
 # 往往用于分类任务对类别的输出
-#####################################################
-
-torch.bincount(input, weights=None, minlength=0)
-'''''
-input: 一个一维张量，包含非负整数。
-weights (可选): 一个与 input 同样大小的张量，用于为每个值分配一个权重。默认为 None。
-minlength (可选): 返回的张量的最小长度。如果指定，输出张量的长度将至少为 minlength，并且包含索引从0到 minlength-1 的计数。默认为 0。
-'''''
-input = torch.tensor([1, 2, 2, 3, 3, 3])
-counts = torch.bincount(input)
-print(counts)
-# 输出: tensor([0, 1, 2, 3])，表示0出现0次，1出现1次，2出现2次，3出现3次
 
 #####################################################
 
@@ -69,3 +57,15 @@ max_values, max_indices = torch.max(final, 1)
 
 print("每行的最大值：", max_values)   # tensor([0.8000, 0.9000, 0.7000])
 print("每行的最大值的索引：", max_indices) #  tensor([1, 2, 0])
+#####################################################
+
+torch.bincount(input, weights=None, minlength=0)
+'''''
+input: 一个一维张量，包含非负整数。
+weights (可选): 一个与 input 同样大小的张量，用于为每个值分配一个权重。默认为 None。
+minlength (可选): 返回的张量的最小长度。如果指定，输出张量的长度将至少为 minlength，并且包含索引从0到 minlength-1 的计数。默认为 0。
+'''''
+input = torch.tensor([1, 2, 2, 3, 3, 3])
+counts = torch.bincount(input)
+print(counts)
+# 输出: tensor([0, 1, 2, 3])，表示0出现0次，1出现1次，2出现2次，3出现3次
