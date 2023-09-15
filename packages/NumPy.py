@@ -8,3 +8,11 @@ import numpy as np
 x = np.array([1.2, 2.7, -3.4, 0.0, 5.1])
 result = np.ceil(x)
 print(result)  # [ 2.  3. -3.  0.  6.]
+
+
+''''np.nanmean 是 NumPy 库中的一个函数，用于计算数组中的平均值，但会忽略数组中的 NaN（Not-a-Number） 值。NaN 常常表示缺失的数据或无效的数据。'''
+arr = np.array([1.0, 2.0, np.nan, 4.0, 5.0])
+
+# 计算数组的平均值，忽略 NaN 值
+mean_value = np.nanmean(arr)
+print(mean_value)  # 输出: 3.0
