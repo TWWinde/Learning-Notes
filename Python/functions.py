@@ -69,3 +69,4 @@ class MyClass:
 obj = MyClass()
 result = isinstance(obj, MyClass)
 print(result)  # 输出: True
+

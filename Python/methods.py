@@ -12,3 +12,14 @@ x = 10
 del x  # 删除变量x
 my_list = [1, 2, 3, 4, 5]
 del my_list[2]  # 删除索引为2的元素，列表变为 [1, 2, 4, 5]
+
+
+'''.keys() 方法通常用于获取字典（dictionary）中的所有键（keys），返回一个包含所有键的可迭代对象（通常是一个列表或类似列表的数据结构）。
+这个方法允许你迭代字典中的键或者检查某个特定键是否存在于字典中。'''
+my_dict = {'name': 'Alice', 'age': 30, 'city': 'New York'}
+# 获取字典中所有键
+keys = my_dict.keys()
+# 打印所有键
+for key in keys:
+    print(key)   # 'name' , 'age', 'city'
+
