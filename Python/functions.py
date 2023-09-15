@@ -48,3 +48,24 @@ original_file_path = 'path/to/source/file.txt'
 new_file_path = 'path/to/destination/file.txt'
 # 复制源文件的内容到目标文件
 shutil.copyfile(original_file_path, new_file_path)
+
+########################################isinstance#######################################
+'''isinstance 是一个 Python 内置函数，用于检查一个对象是否属于指定的类或类型。'''
+result = isinstance(42, int)
+print(result)  # 输出: True
+
+# 检查一个字符串是否是字符串类型
+result = isinstance("Hello", str)
+print(result)  # 输出: True
+
+# 检查一个列表是否是列表类型或元组类型
+result = isinstance([1, 2, 3], (list, tuple))
+print(result)  # 输出: True
+
+# 检查一个对象是否是特定类的实例
+class MyClass:
+    pass
+
+obj = MyClass()
+result = isinstance(obj, MyClass)
+print(result)  # 输出: True
