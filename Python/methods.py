@@ -5,6 +5,8 @@
 my_dict = {'key1': 'value1', 'key2': 'value2'}
 value = my_dict.get('key1')
 print(value)  # 输出: 'value1'
+# .get()用来获取字典中某个键对应的值
+
 
 
 '''''''del 是一个Python关键字，用于删除变量、对象或对象中的属性。'''''''
