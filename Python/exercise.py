@@ -18,3 +18,7 @@ def duplicate_count(text):
     # .value() 获取字典中char_count的所有值
     return duplicate_count
 # 字典的应用
+
+'''以二进制字符串的形式返回两个数字的和'''''
+def add_binary(a,b):
+    return bin(a+b)[2:]   # [2:] 来去掉前缀
