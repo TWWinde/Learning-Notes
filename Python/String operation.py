@@ -37,3 +37,13 @@ print("Done")
     * >：右对齐值在字段内
     * ^：居中值在字段内
     '''
+
+#########################################.split()#######################################
+'''.split() 是Python字符串方法，用于将字符串分割成子字符串并返回一个包含这些子字符串的列表。你可以通过指定分隔符来控制分割的方式。
+默认情况下，.split() 方法会以空格为分隔符将字符串分割成单词。'''
+text = "Hello World"
+words = text.split()  # 默认情况下使用空格分割
+print(words)  # 输出: ['Hello', 'World']
+text = "apple,banana,cherry"
+fruits = text.split(",")  # 使用逗号作为分隔符
+print(fruits)  # 输出: ['apple', 'banana', 'cherry']
