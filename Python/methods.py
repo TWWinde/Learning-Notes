@@ -25,3 +25,10 @@ keys = my_dict.keys()
 for key in keys:
     print(key)   # 'name' , 'age', 'city'
 
+'''''''如何取两个list的交集'''''''
+list1 = [1, 2, 3, 4, 5]
+list2 = [3, 4, 5, 6, 7]
+
+intersection = list(set(list1) & set(list2))
+intersection1 = [value for value in list1 if value in list2]
+intersection2 = list(filter(lambda value: value in list2, list1))
